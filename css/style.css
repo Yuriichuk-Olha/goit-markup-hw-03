@@ -15,14 +15,13 @@ body {
     font-size: 14px;
     color:var(--primary-text-color);
     background-color:var(--primary-white-color);
-    letter-spacing: 0.03em;
-    
+    letter-spacing: 0.03em;  
 }
 
 a {
     text-decoration: none;
     
-    }
+}
 
 ul {
     padding: 0;
@@ -35,16 +34,14 @@ ul {
     border-bottom:var(--secondary-border) 1px solid;
     align-items: center;
 
-
 }
 
 
-.header-title .header {
+.header-title.container {
     display: flex;
-    /* align-content: center;
-    align-items: center; */
-
 }
+
+
 .header-nav {
     display: flex;
 }
@@ -60,7 +57,7 @@ ul {
 }
 .header-logo,.navig-item,.header-wrap {
     display: flex;
-    align-content: center;
+    /* align-content: center; */
     align-items: center;
     flex-direction:row;
 }
@@ -82,22 +79,20 @@ ul {
     display: flex;
 }
 .header-wrap {
-    display:inline-flex;
-    margin-right: auto;
-    justify-content:flex-end;
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
+    gap: 50px;
 }
+
 .wrap-contact {
     display: flex;
-    /* justify-content: end; */
-    /* margin-left: auto; */
+    
 }
-/* .wrap-contact:not(:first-child) {
-    /* margin-left: 50px; */
-} 
-
 
 .header-contact {
-    /* justify-content: end; */
+    display: inline-block;
+
     padding-top: 32px;
     padding-bottom: 32px;
    
@@ -118,6 +113,7 @@ ul {
     color:var(--accent-text-color)
 }
 .navigation-link {
+    display: inline-block;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -129,8 +125,9 @@ ul {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 } 
+
 h1,
 h2,
 h3,
@@ -145,31 +142,25 @@ p {
 ul {
     padding-left: 0;
 }
-/* img {
-    display: block;
-    align-items: flex-start;
-    max-width: 100%;
-    height: auto;
-} */
+
 
 .hero-section {
-    background-color:var(--primary-background-color);
-    text-align:center;
     padding-top: 200px;
     padding-bottom: 200px;
 
-    
+    background-color:var(--primary-background-color);
+    text-align:center;  
 }
 
 .main-title {
     max-width: 696px;
-    margin:auto;
+    margin:0 auto;
 
     font-size: 44px;
     line-height: 1.36;
-    /* text-align:center; */
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
     color:var(--primary-white-color);
     
 }
@@ -218,7 +209,9 @@ ul {
 .benefits,.secon,.section-job {
     padding-top: 94px;
 }
-
+.secon,.section-job {
+    padding-bottom: 94px;
+}
 .title-secon {
     margin-bottom: 50px;
 
@@ -280,7 +273,7 @@ img {
 }
 
 .team-job {
-   font-size: 16px;
+    font-size: 16px;
     line-height: 1.19;
     text-align: center;
     color:var(--secondary-text-color);
@@ -295,7 +288,8 @@ img {
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-   background-color:var(--primary-background-color);
+
+    background-color:var(--primary-background-color);
 }
 
 .footer-logo { 
@@ -303,6 +297,7 @@ img {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    
     color:var(--primary-white-color);
 
 }
@@ -316,7 +311,7 @@ img {
  }
 
 .footer-title {
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .footer-contact {
@@ -347,10 +342,15 @@ img {
     display: flex;
     justify-content: center;
     margin-bottom: 34px;
+    gap: 8px;
 }
-.title-button:not(:first-child) {
-    margin-left: 10px;
-}
+
+/* другий спосіб по відступах між елементами */
+
+
+/* .title-button:not(:first-child) {
+    margin-left: 8px;
+} */
 
 .main-button {
     padding: 6px 22px;
@@ -387,7 +387,7 @@ img {
     flex-wrap: wrap;
     gap: 30px;
 }
-
+/* другий спосіб по відступах між елементами */
 /* .wrap-list {
     margin-right: 30px;
     margin-bottom: 30px;
@@ -402,7 +402,10 @@ img {
 
 .user-wrapper {
     padding:20px 24px;
-    border:var(--secondary-border-color) 1px solid;   
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px
+     rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    /* border:var(--secondary-border-color) 1px solid;    */
 }
 
 .main-user {
